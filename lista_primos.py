@@ -15,7 +15,7 @@ for numero in range (2, entrada + 1):
         if numero % divisor == 0:
             resultado = False
             break
-        if resultado == True:
+    if resultado == True:
             numeros.append(numero)
 
 print(f"Los números primos menores o iguales a {entrada} son: {numeros}")
