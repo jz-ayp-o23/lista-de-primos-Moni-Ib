@@ -3,20 +3,20 @@ Inserta el encabezado aquí y escribe tu código abajo
 """
 
 # Declaraciones
-divisores = []
+numeros = []
+
 # Entradas
 entrada = int(input("Introduzca un número: "))
 
 # Proceso
-divisor = 2
-for numero in range (1, entrada + 1):
-    while divisor < entrada:
-        if entrada % divisor == 0 and divisor != entrada:
+for numero in range (2, entrada + 1):
+    resultado = 0
+    for divisor in range(2, numero):
+        if numero % divisor == 0:
             break
-        divisor += 1
-    else:
-        divisores.append(divisor)
-        print(f"Los números primos menores o igaules a {entrada} son: {divisores}")
+        else:
+            numeros.append(numero)
+            print(f"Los números primos menores o igaules a {entrada} son: {numeros}")
 
 
         
