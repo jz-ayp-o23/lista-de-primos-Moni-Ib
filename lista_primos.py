@@ -16,7 +16,7 @@ for numero in range (2, entrada + 1):
             break
         else:
             numeros.append(numero)
-            print(f"Los números primos menores o igaules a {entrada} son: {numeros}")
+            print(f"Los números primos menores o iguales a {entrada} son: {numeros}")
 
 
         
